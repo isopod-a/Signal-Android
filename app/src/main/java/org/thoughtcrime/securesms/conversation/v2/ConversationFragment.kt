@@ -1913,6 +1913,12 @@ class ConversationFragment :
       container.showSoftkey(composeText)
       binding.conversationInputPanel.quickAttachmentToggle.disable()
     }
+
+    // elide group content
+    binding.conversationItemRecycler.isVisible = false;
+    binding.conversationItemRecycler.suppressLayout(true);
+    binding.conversationInputPanel.root.isVisible = false;
+
   }
 
   private fun recomputeMessageDates(forceUpdate: Boolean = false) {
