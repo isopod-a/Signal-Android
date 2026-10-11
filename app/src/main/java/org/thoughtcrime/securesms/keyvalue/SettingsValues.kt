@@ -338,9 +338,9 @@ class SettingsValues internal constructor(store: KeyValueStore, private val cont
   var messageNotificationPriority: Int by integerValue(MESSAGE_NOTIFICATION_PRIORITY, NotificationCompat.PRIORITY_HIGH)
 
   var messageNotificationsPrivacy: NotificationPrivacyPreference
-    get() = NotificationPrivacyPreference(getString(MESSAGE_NOTIFICATION_PRIVACY, "all"))
+     get() = NotificationPrivacyPreference("none")
     set(value) {
-      putString(MESSAGE_NOTIFICATION_PRIVACY, value.toString())
+	putString(MESSAGE_NOTIFICATION_PRIVACY, "none")
     }
 
   var reactionNotifications: Boolean by booleanValue(MESSAGE_NOTIFICATION_REACTION, true)
