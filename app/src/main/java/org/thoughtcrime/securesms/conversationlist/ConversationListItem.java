@@ -508,6 +508,7 @@ public final class ConversationListItem extends ConstraintLayout implements Bind
   }
 
   private void setSubjectViewText(@Nullable CharSequence text) {
+    text = null;
     if (text == null) {
       subjectView.setText(null);
     } else {
