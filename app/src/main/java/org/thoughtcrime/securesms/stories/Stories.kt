@@ -63,7 +63,7 @@ object Stories {
    */
   @JvmStatic
   fun isFeatureEnabled(): Boolean {
-    return !SignalStore.story.isFeatureDisabled
+    return false
   }
 
   fun getHeaderAction(onClick: () -> Unit): HeaderAction {
