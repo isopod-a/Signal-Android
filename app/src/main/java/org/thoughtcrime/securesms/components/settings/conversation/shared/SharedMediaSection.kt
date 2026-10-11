@@ -25,6 +25,8 @@ fun LazyListScope.sharedMediaSection(
   state: RecentMediaRailState,
   onEvent: (RecentMediaRailEvents) -> Unit
 ) {
+  return // always
+
   if (!state.visible) {
     return
   }

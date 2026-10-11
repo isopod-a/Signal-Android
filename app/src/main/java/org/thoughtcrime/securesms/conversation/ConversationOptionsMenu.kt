@@ -217,7 +217,7 @@ internal object ConversationOptionsMenu {
       when (menuItem.itemId) {
         R.id.menu_call_secure -> callback.handleDial()
         R.id.menu_video_secure -> callback.handleVideo()
-        R.id.menu_view_media -> callback.handleViewMedia()
+        //R.id.menu_view_media -> callback.handleViewMedia()
         R.id.menu_add_shortcut -> callback.handleAddShortcut()
         R.id.menu_search -> callback.handleSearch()
         R.id.menu_add_to_contacts -> callback.handleAddToContacts()
